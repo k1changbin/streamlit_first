@@ -394,6 +394,18 @@ with tab3:
     fig_channel.add_trace(
         go.Pie(
             labels=channel_data['channel'],
+            values=channel_data['revenue'],
+            name='매출',
+            hole=0.4,
+            marker_colors=px.colors.qualitative.Set3
+        ),
+        row=1, col=1
+    )
+
+    # 채널별 판매 수량 파이 차트
+    fig_channel.add_trace(
+        go.Pie(
+            labels=channel_data['channel'],
             values=channel_data['quantity'],
             name='수량',
             hole=0.4,
