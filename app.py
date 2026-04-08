@@ -414,18 +414,6 @@ with tab3:
         row=1, col=2
     )
 
-    # 매출 파이 차트
-    fig_channel.add_trace(
-        go.Pie(
-            labels=channel_data['channel'],
-            values=channel_data['quantity'],
-            name='수량',
-            hole=0.4,
-            marker_colors=px.colors.qualitative.Set3
-        ),
-        row=1, col=2
-    )
-    
     fig_channel.update_layout(
         title_text='채널별 매출 및 판매 수량 비교',
         height=450
