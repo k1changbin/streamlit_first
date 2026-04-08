@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import altair as alt
 
-st.title('복합 차트 구현 📊')
+st.title('복합 차트 구현! 📊')
 
 # 샘플 데이터 생성
 @st.cache_data
